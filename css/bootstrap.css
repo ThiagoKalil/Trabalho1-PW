@@ -1906,7 +1906,7 @@ pre code {
 
 .form-control {
     display: block;
-    width: 100%;
+    width: 300px;
     height: calc(2.25rem + 2px);
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
@@ -3196,7 +3196,7 @@ input[type="button"].btn-block {
     color: #212529;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: rgb(7, 6, 6);
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
@@ -3208,6 +3208,13 @@ input[type="button"].btn-block {
 }
 
 .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-top: 0;
+    margin-bottom: 0.125rem;
+}
+
+.dropup {
     top: auto;
     bottom: 100%;
     margin-top: 0;
@@ -3309,6 +3316,14 @@ input[type="button"].btn-block {
     bottom: auto;
 }
 
+[x-placement^="top"],
+[x-placement^="right"],
+[x-placement^="bottom"],
+[x-placement^="left"] {
+    right: auto;
+    bottom: auto;
+}
+
 .dropdown-divider {
     height: 0;
     margin: 0.5rem 0;
@@ -3322,7 +3337,7 @@ input[type="button"].btn-block {
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #000000;
+    color: #ffffff;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -3333,9 +3348,9 @@ input[type="button"].btn-block {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
-    background-color: #000000;
+    background-color: #ffffff;
     background: url("../img/");
 }
 
@@ -3345,7 +3360,7 @@ input[type="button"].btn-block {
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #000000;
+    color: #e7e7e7;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -3369,7 +3384,7 @@ input[type="button"].btn-block {
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #000000;
+    color: #e7e7e7;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -3393,7 +3408,7 @@ input[type="button"].btn-block {
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #000000;
+    color: #e7e7e7;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -3417,7 +3432,7 @@ input[type="button"].btn-block {
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #000000;
+    color: #e7e7e7;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -3441,7 +3456,7 @@ input[type="button"].btn-block {
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #000000;
+    color: #e7e7e7;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -3459,22 +3474,13 @@ input[type="button"].btn-block {
     background-size: cover;
 }
 
-.dropdown-item7:hover,
-.dropdown-item7:focus {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #000000;
-    background: url("../img/");
-    background-size: cover;
-}
-
 .dropdown-item7 {
     display: block;
     width: 100%;
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #000000;
+    color: #e7e7e7;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -3487,9 +3493,36 @@ input[type="button"].btn-block {
 .dropdown-item7:focus {
     color: #000000;
     text-decoration: none;
-    background-color: #000000;
-    background: url("../img/");
+    background-color: #ffffff;
     background-size: cover;
+}
+
+.dropdown-item8 {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #e7e7e7;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-family: "hero";
+    font-size: 26px;
+}
+
+.dropdown-item8:hover,
+.dropdown-item8:focus {
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+.fonte {
+    font-family: "hero";
+    font-size: 26px;
 }
 
 @font-face {
@@ -3521,6 +3554,10 @@ input[type="button"].btn-block {
 }
 
 .dropdown-menu.show {
+    display: block;
+}
+
+.show {
     display: block;
 }
 

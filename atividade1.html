@@ -7,6 +7,7 @@
     <title>BLOG</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="libs/MaterialDesign/MaterialDesign-Webfont-master/css/materialdesignicons.css">
 </head>
 
 <body class="text-center">
@@ -28,7 +29,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle p-3 " href="#" data-toggle="dropdown">SHOWS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a href="#" class="dropdown-item">WoodStock</a>
+                        <a href="#" class="dropdown-item8">WoodStock</a>
+                        <a href="#" class="dropdown-item8">Isle of Wight Festival</a>
                     </div>
                 </li>
 
@@ -45,7 +47,36 @@
                 </li>
             </ul>
         </div>
-        <img height="65px" src="img/flaming-rabbit.png" alt="">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle p-3 " href="#" data-toggle="dropdown"> <img height="65px" src="img/flaming-rabbit.png" alt=""></a>
+                <div class="dropdown-menu dropdown-menu-right fundo" aria-labelledby="navbarDropdown">
+                    <div class=" col-6 col-sm-6 col-md-6">
+                        <form action="">
+                            <div class="form-group">
+                                <label class="text-white fonte" for="my-input">Nome</label>
+                                <input id="my-input" class="form-control kalil" type="text" name="">
+                            </div>
+                            <div class="form-group">
+                                <label class="text-white fonte" for="my-input">E-mail</label>
+                                <input id="my-input" class="form-control kalil" type="email" name="">
+                            </div>
+                            <div class="form-group">
+                                <label class="text-white fonte" for="my-input">Telefone</label>
+                                <input id="telefone" class="form-control kalil" type="text" name="">
+                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="text-white fonte" for="my-input">Celular</label>
+                            <input id="celular" class="form-control kalil" type="text" name="">
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </nav>
     <br>
     <div class="container-fluid">
@@ -60,6 +91,7 @@
                         </h4>
                     </div>
                     <a href="https://revista.cifras.com.br/artigo/ozzy-osbourne-mordeu-um-morcego"><img src="img/ozzy2.jpg" class="img-fluid card-img-right flex-auto d-none d-lg-block" alt="Card image cap"></a>
+                    <p class="text-white">No dia 20 de janeiro de 1982, Ozzy Osbourne protagonizou esse que foi um dos capítulos mais polêmicos de sua carreira – e da história da música em geral.</p>
                 </div>
 
             </div>
@@ -75,6 +107,7 @@
 
                     </div>
                     <a href="http://www.artescetera.com.br/musica/as-10-performances-mais-marcantes/"><img src="img/hendrix-burn-guitar.jpg" class="img-fluid card-img-right flex-auto d-none d-lg-block" alt="Card image cap"></a>
+                    <p class="text-white">Confira algumas destas boas performances de algumas bandas em que é nítido a animação contagiante e a excitação vencendo o cansaço.</p>
                 </div>
             </div>
         </div>
@@ -95,12 +128,14 @@
     </div>
 
     </div>
-    <footer class="rodape">
+    <footer class="rodape fixed-botom">
         Todos os direitos reservados.
     </footer>
 
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="libs/jQueryMask/jQueryMask/dist/jquery.mask.js"></script>
+    <script src="js/kalil.js"></script>
 
 </body>
 

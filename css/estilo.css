@@ -53,3 +53,8 @@
                 .ajuste {
                     height: 245px;
                 }
+                
+                .fundo {
+                    background: url("../img/textura-form.jpg");
+                    background-size: cover;
+                }
